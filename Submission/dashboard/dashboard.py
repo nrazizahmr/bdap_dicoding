@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1iSElUog-B3rHIPmhvpJfdRst8QpIwmBS
 """
 
-!pip install streamlit
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -46,7 +44,7 @@ def sidebar(df):
     max_date = df["dteday"].max()
 
     with st.sidebar:
-        st.image("bike-share.png")
+        st.image("https://raw.githubusercontent.com/nrazizahmr/BDAP_Dicoding/blob/main/Submission/dashboard/bike-share.png")
 
         def on_change():
             st.session_state.date = date
