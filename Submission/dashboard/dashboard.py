@@ -141,11 +141,11 @@ if __name__ == "__main__":
     else:
         main_df = day[(day["dteday"] >= str(st.session_state.date[0])) & (day["dteday"] <= str(st.session_state.date[1]))]
 
-    year = create_yr(main_df)
-    year(year)
+    year_df = create_yr(main_df)
+    year(year_df)
     month(main_df)
     holiday_df = create_holiday(main_df)
-    holiday(holiday)
-    workingday = create_workingday(main_df)
-    workingday(workingday)
+    holiday(holiday_df)
+    workingday_df = create_workingday(main_df)
+    workingday(workingday_df)
 
